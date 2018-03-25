@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Budżet domowy</title>
+</head>
+
+
+<body>
+<div class="container">
+
+          <span  th:each="przychody: ${przychody}">
+          <span th:text="${przychody.type}+'   opis: '"></span><span th:text="${przychody.description}+' Kwota: '"></span><span th:text="${przychody.amount}"></span>
+          </span>
+
+</div>
+</body>
+</html>
