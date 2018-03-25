@@ -21,8 +21,8 @@ public class PrzychodyController {
     private static final String PASS = "kociakolka";
     private Connection connection;
 
-    public PrzychodyController(Connection connection) {
-        this.connection = connection;
+    public PrzychodyController() {
+
     }
 
     @ResponseBody
